@@ -5,3 +5,37 @@
 .card-body {
     padding: 2rem; 
 }
+
+.side-navbar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    background-color: #f8f9fa;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.top-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 101;
+}
+
+.main-content {
+    margin-left: 250px; /* Space for side navbar */
+    margin-top: 56px; /* Space for top navbar */
+    padding: 40px;
+}
+
+.module-heading {
+    margin-top: 40px; /* Adjust this value as needed */
+}
+
+.vcontent {
+    margin-left: 150px; /* Offset for the side navbar */
+    padding-top: 50px; /* Offset for top navbar height */
+  }
