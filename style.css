@@ -39,3 +39,16 @@
     margin-left: 150px; /* Offset for the side navbar */
     padding-top: 50px; /* Offset for top navbar height */
   }
+
+.marg {
+    padding-top: 75px;
+}
+
+.progress {
+    margin-left:65px;
+}
+
+#interactive-section {
+    display: none; 
+    background-color: red;
+}

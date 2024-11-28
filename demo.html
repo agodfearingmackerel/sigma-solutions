@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- the navbar -->
+<!-- the navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
     <div class="container">
         <a class="navbar-brand fw-semibold" href="#">Σ SigmaSolutions | Demo</a>
@@ -30,8 +30,9 @@
             </ul>
         </div>
     </div>
-  </nav>
-  <!-- Side Navbar -->
+</nav>
+
+<!-- Side Navbar -->
 <div class="side-navbar bg-light">
     <div class="container-fluid px-3 py-4">
         <a class="navbar-brand fw-semibold" href="#">Σ SigmaSolutions | Demo Course</a>
@@ -58,20 +59,33 @@
     </div>
 </div>
 
-  <!-- Main Content Section -->
-  <div class="vcontent">
-    <!-- YouTube Video Embed -->
-    <div class="container mt-5">
-        <h1>Module 5: Examples</h1>
-        <hr>
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="725px" height="475px" src="videomodule.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- Main Content Section -->
+<div class="vcontent container mt-5 text-center">
+    <div class="row">
+        <!-- Video Column (Initially visible) -->
+        <div id="video-column" class="col-md-8">
+            <h1>Module 5: Examples</h1>
+            <hr>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe id="joe-video" width="725px" height="475px" src="videomodule.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
-        <div class="progress" style="width:725px;">
-            <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
+
+        <!-- New Column with Summary -->
+        <div id="summary-column" class="col-md-4 marg">
+            <h2>Summary</h2>
+            <h5>Concepts</h5>
+            <p>Freefall is when an object moves only under the force of gravity. Although air resistance or friction usually affect falling objects, we often ignore it in calculations to simplify and still consider it freefall. Acceleration due to gravity is approximately -10 m/s².</p>
+            <h5>Equations</h5>
+            <p>v = v₀ + at | Solving for velocity</p>
+            <p>x = x₀ + vt + ½at² | Solving for position</p>
+            <p>v² = v₀² + 2a(x - x₀) | Solving for velocity without time</p>
+            <a class="btn btn-outline-dark btn-md" onclick="moveOn()" role="button">Ready to Move On?</a>
+        </div>
     </div>
-  </div>
+</div>
+
+
 <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
