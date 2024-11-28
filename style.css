@@ -26,23 +26,19 @@
 }
 
 .main-content {
-    margin-left: 250px; /* Space for side navbar */
-    margin-top: 56px; /* Space for top navbar */
+    margin-left: 250px; 
+    margin-top: 56px;
     padding: 40px;
 }
 
-.module-heading {
-    margin-top: 40px; /* Adjust this value as needed */
+.module-header {
+    margin-top: 30px;
 }
 
 .vcontent {
-    margin-left: 150px; /* Offset for the side navbar */
-    padding-top: 50px; /* Offset for top navbar height */
+    margin-left: 150px;
+    padding-top: 50px; 
   }
-
-.marg {
-    padding-top: 75px;
-}
 
 .progress {
     margin-left:15vw;
@@ -50,11 +46,30 @@
     width:80vw;
 }
 
+#v-content {
+    opacity: 1;
+    transition: opacity 0.5s ease;;
+}
+
 #v-content2 {
     display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;;
 }
 
 #v-content3 {
     display:none;
+    transition-duration: 1s;
 }
 
+canvas {
+    border: 1px solid black;
+    border-radius: 10px; 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); 
+}
+
+input[type=range] {
+    writing-mode: vertical-lr;
+    direction: rtl;
+    vertical-align: middle;
+}

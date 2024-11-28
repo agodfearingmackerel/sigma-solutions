@@ -38,7 +38,7 @@
         <a class="navbar-brand fw-semibold" href="#">Σ SigmaSolutions | Demo Course</a>
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link active module-heading" href="#">Module 1: <em>Intro to Physics & Measurement</em></a>
+                <a class="nav-link active module-header" href="#">Module 1: <em>Intro to Physics & Measurement</em></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Module 2: <em>Motion in One Dimension</em></a>
@@ -60,17 +60,27 @@
 </div>
 
 <!-- Main Content Section -->
-<div id="v-content" class="vcontent container mt-5 text-center">
+<!-- Shared Header -->
+<div class="text-center mt-5">
+    <h1 style="margin-top:70px;" >Module 5: Examples</h1>
+    <hr style="margin-bottom: 0px;">
+</div>
+
+<!-- First Content Block -->
+<div id="v-content" class="vcontent container text-center">
     <div class="row">
+        <!-- Video Column -->
         <div id="video-column" class="col-md-8">
-            <h1>Module 5: Examples</h1>
-            <hr>
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe id="joe-video" width="725px" height="475px" src="videomodule.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="joe-video" width="725px" height="475px" 
+                        src="videomodule.mp4" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
             </div>
         </div>
 
-        <div id="summary-column" class="col-md-4 marg">
+        <!-- Summary Column -->
+        <div id="summary-column" class="col-md-4">
             <h2>Summary</h2>
             <h5>Concepts</h5>
             <p>Freefall is when an object moves only under the force of gravity. Although air resistance or friction usually affect falling objects, we often ignore it in calculations to simplify and still consider it freefall. Acceleration due to gravity is approximately -10 m/s².</p>
@@ -83,21 +93,30 @@
     </div>
 </div>
 
-<div id="v-content2" class="vcontent container mt-5 text-center">
+<!-- Second Content Block -->
+<div id="v-content2" class="vcontent container text-center" style="display: none;">
     <div class="row">
         <!-- Video Column -->
         <div id="video-column" class="col-md-8">
-            <h1>Module 5: Examples</h1>
-            <hr>
-            
+            <div class="row">
+                <div class="col-md-10 text-center">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <canvas width="600px" height="475px" style="border: 1px solid black;"></canvas>
+                    </div>
+                </div>
+                <div class="col-md-2 d-flex justify-content-center">
+                    <input id="height-slider" type="range" min="0" max="100" step="1" value="0" />
+                </div>
+            </div>
         </div>
 
         <!-- Summary Column -->
         <div id="summary-column" class="col-md-4">
-
+            <!-- Empty or new content -->
         </div>
     </div>
 </div>
+
 
 <div id="v-content3" class="vcontent container mt-5 text-center">
     <div class="row">
