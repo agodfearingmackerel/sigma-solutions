@@ -1,7 +1,9 @@
 let currentProgress = 0;
 const bar = document.getElementById('progress-bar');
-//const iframe = document.querySelector('iframe');
+const heightSlider = document.getElementById('height-slider');
+const sliderValue = document.getElementById('slider-value');
 
+//increase prog bar
 function progressUp() {
     currentProgress += 25;
     bar.setAttribute('aria-label', currentProgress);
@@ -9,6 +11,7 @@ function progressUp() {
     console.log(currentProgress);
 }
 
+//move to content 2 w/ fade
 function moveOn() {
     const vContent = document.getElementById('v-content');
     const vContent2 = document.getElementById('v-content2');
@@ -28,3 +31,8 @@ function moveOn() {
 
     progressUp();
 }
+
+//update the value when the slider changes
+heightSlider.addEventListener('input', function() {
+    sliderValue.textContent = heightSlider.value;
+});
