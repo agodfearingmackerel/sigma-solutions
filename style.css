@@ -45,10 +45,16 @@
 }
 
 .progress {
-    margin-left:65px;
+    margin-left:15vw;
+    margin-top: 20px;
+    width:80vw;
 }
 
-#interactive-section {
-    display: none; 
-    background-color: red;
+#v-content2 {
+    display: none;
 }
+
+#v-content3 {
+    display:none;
+}
+

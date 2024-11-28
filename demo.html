@@ -60,9 +60,8 @@
 </div>
 
 <!-- Main Content Section -->
-<div class="vcontent container mt-5 text-center">
+<div id="v-content" class="vcontent container mt-5 text-center">
     <div class="row">
-        <!-- Video Column (Initially visible) -->
         <div id="video-column" class="col-md-8">
             <h1>Module 5: Examples</h1>
             <hr>
@@ -71,7 +70,6 @@
             </div>
         </div>
 
-        <!-- New Column with Summary -->
         <div id="summary-column" class="col-md-4 marg">
             <h2>Summary</h2>
             <h5>Concepts</h5>
@@ -85,6 +83,62 @@
     </div>
 </div>
 
+<div id="v-content2" class="vcontent container mt-5 text-center">
+    <div class="row">
+        <!-- Video Column -->
+        <div id="video-column" class="col-md-8">
+            <h1>Module 5: Examples</h1>
+            <hr>
+            
+        </div>
+
+        <!-- Summary Column -->
+        <div id="summary-column" class="col-md-4">
+
+        </div>
+    </div>
+</div>
+
+<div id="v-content3" class="vcontent container mt-5 text-center">
+    <div class="row">
+        <!-- Video Column -->
+        <div id="video-column" class="col-md-8">
+            <h1>Module 5: Examples</h1>
+            <hr>
+            <!-- Create a row for the range input and canvas -->
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="range" orient="vertical" style="height: 475px;"/>
+                </div>
+                <div class="col-sm">
+                    <canvas id="myCanvas" width="525" height="475" style="border:1px solid #000000;"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary Column -->
+        <div id="summary-column" class="col-md-4">
+            <h2>Workbox</h2>
+            <h5>Equations</h5>
+            <p>v = v₀ + at | Solving for velocity</p>
+            <p>x = x₀ + vt + ½at² | Solving for position</p>
+            <p>v² = v₀² + 2a(x - x₀) | Solving for velocity without time</p>
+            <h5>Scrap Paper</h5>
+            <p>Use to write your thoughts</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <textarea class="form-control" rows="8" style="resize: none; width: 100%;"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="progress">
+    <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
 
 <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

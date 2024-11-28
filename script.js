@@ -1,6 +1,6 @@
 let currentProgress = 0;
 const bar = document.getElementById('progress-bar');
-const iframe = document.querySelector('iframe');
+//const iframe = document.querySelector('iframe');
 
 function progressUp() {
     currentProgress += 25;
@@ -10,6 +10,7 @@ function progressUp() {
 }
 
 function moveOn() {
-    document.getElementById('video-column').style.display = 'none';
-    document.getElementById('summary-column').style.display = 'none';
+    document.getElementById('v-content').style.display = 'none';
+    document.getElementById('v-content2').style.display = 'block';
+    progressUp();
 }
